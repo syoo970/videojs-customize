@@ -1,5 +1,16 @@
 {
-  "extends": ["plugin:mdx/recommended"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:mdx/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 2015
+  },
+  "plugins": ["@typescript-eslint"],
   "settings": {
     "mdx/code-blocks": true
   }
