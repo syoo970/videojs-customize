@@ -5,3 +5,17 @@ import { Meta } from "@storybook/addon-docs";
 # Video Js 컴포넌트
 
 video.js custom 컴포넌트 unit test와 문서화를 위한 storybook입니다.
+구현 사항
+
+- player instance를 만드는 로직을 useVideo라는 custom hook으로 분리
+
+```javascript
+const { player, playerReset } = useVideo({ videoDOM, options });
+```
+
+- return value
+  - player: video.js 플레이어
+  - playerReset: video.js 인스턴스 dispose후 재 initialize
+- props
+  - videoDOM: video dom node
+  - options: video.js option

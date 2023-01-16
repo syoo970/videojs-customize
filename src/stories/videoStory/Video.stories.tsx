@@ -48,3 +48,4 @@ const Template: ComponentStory<typeof Video> = (args) => {
 };
 
 export const Default = Template.bind({});
+Default.args = {};
