@@ -20,3 +20,7 @@
 ### storybook
 
 - `npm run storybook` or `yarn storybook`을 통해 스토리북 실행
+
+## 스토리북 데모
+
+- https://63c605548c76513e84ac879d-cpnrofmfjd.chromatic.com/?path=/story/%EC%8B%9C%EC%9E%91-introduction--page
