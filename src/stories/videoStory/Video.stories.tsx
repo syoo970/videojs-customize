@@ -36,13 +36,15 @@ const Template: ComponentStory<typeof Video> = (args) => {
   };
 
   return (
-    <div>
+    <div style={{ display: "flex", flexDirection: "column" }}>
       <Video {...args} sources={videoSource} />
-      <select onChange={handleSelectChange}>
-        <option value="starwars">Starwars</option>
-        <option value="city">City</option>
-        <option value="beach">Beach</option>
-      </select>
+      <div>
+        <select onChange={handleSelectChange}>
+          <option value="starwars">Starwars</option>
+          <option value="city">City</option>
+          <option value="beach">Beach</option>
+        </select>
+      </div>
     </div>
   );
 };
